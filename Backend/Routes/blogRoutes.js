@@ -71,8 +71,7 @@ blogRoutes.put("/updateBlog/:id", async (req, res) => {
         return res.status(404).json({ message: "Blog not found!" });
       }
   
-      res.status(200).json({ message: "Blog updated successfully!", blog: updatedBlog
-      });
+      res.status(200).json({ message: "Blog updated successfully!", blog: updatedBlog});
   
     } catch (error) {
       console.error(error);
